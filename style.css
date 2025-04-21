@@ -1,0 +1,68 @@
+body {
+  /* background: url(/image/a.png) no-repeat center center fixed; */
+  background-size: cover;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+}
+
+.overlay {
+  backdrop-filter: blur(12px);
+  background-color: rgba(0, 0, 0, 0.75);
+  min-height: 100vh;
+  padding-top: 40px;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  max-width: 650px;
+}
+
+.glass-input {
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  /* border: 1px solid rgba(255, 255, 255, 0.25); */
+  color: black;
+  border-radius: 10px;
+}
+
+.glass-input::placeholder {
+  color: black;
+}
+
+.btn-vote-a {
+  background: linear-gradient(135deg, #1dd1a1, #10ac84);
+  color: white;
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+}
+
+.btn-vote-b {
+  background: linear-gradient(135deg, #ee5253, #ff6b6b);
+  color: white;
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+}
+
+.btn-vote-a:hover,
+.btn-vote-b:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+.glow-text {
+  text-shadow: 0 0 12px #00ffff, 0 0 20px #00ffff;
+}
+
+table {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+th, td {
+  vertical-align: middle;
+  text-align: center;
+}
