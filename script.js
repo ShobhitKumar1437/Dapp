@@ -264,7 +264,7 @@ let web3;
 			try {
 			  await contract.methods.vote(documentId, party).send({ from: accounts[0] });
 			  
-			  errorDiv.textContent = "";
+			  errorDiv.textContent = "✅ Vote successfully cast!";
 			} catch (error) {
 			  errorDiv.textContent = "❌ Transaction failed. Check console for details.";
 			  console.error(error);
