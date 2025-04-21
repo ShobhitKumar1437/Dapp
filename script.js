@@ -253,7 +253,13 @@ let web3;
 			  errorDiv.textContent = "❌ Document ID is required.";
 			  return;
 			}
-		
+
+			if (documentId.length !== 12) {
+				errorDiv.textContent = "❌ Document ID must be exactly 12 characters.";
+				return;
+			}
+
+			
 			const accounts = await web3.eth.getAccounts();
 			try {
 			  await contract.methods.vote(documentId, party).send({ from: accounts[0] });
